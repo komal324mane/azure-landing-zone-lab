@@ -1,6 +1,37 @@
+<div align="center">
+
 # Azure Landing Zone Lab
 
-A learning-oriented reference for Azure governance, identity, network topology, and centralized operations. The diagrams and policy sample are conceptual examples; this repository does **not** deploy an enterprise landing zone.
+### Governance · Identity · Connectivity · Operations
+
+![Azure](https://img.shields.io/badge/Azure-Landing%20Zone-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Governance](https://img.shields.io/badge/Cloud-Governance-2563EB?style=for-the-badge)
+![Status](https://img.shields.io/badge/Type-Learning%20Reference-64748B?style=for-the-badge)
+
+**A visual study guide for organizing and governing Azure environments.**
+
+</div>
+
+> [!NOTE]
+> This is a learning/reference project. The diagrams and policy example are conceptual; this repository does **not** deploy an enterprise landing zone or change tenant configuration.
+
+## At a glance
+
+| Pillar | Topics |
+| --- | --- |
+| **Organize** | Tenant, management groups, platform and workload subscriptions |
+| **Protect** | Microsoft Entra ID, least-privilege RBAC, policy and exceptions |
+| **Connect** | Hub-and-spoke, routing, Private Endpoints and Private DNS |
+| **Operate** | Central logs, monitoring, resilience and FinOps |
+
+## Contents
+
+- [Management group hierarchy](#management-group-and-subscription-hierarchy)
+- [Identity and access](#identity-and-access-management)
+- [Policy example](#azure-policy-example)
+- [Hub-and-spoke reference](#hub-and-spoke-reference)
+- [Governance checklist](#governance-and-operations-checklist)
+- [Validation and further study](#validation-and-use)
 
 ## Management group and subscription hierarchy
 
@@ -88,3 +119,11 @@ This lab intentionally contains no subscription/management-group deployment code
 - Hub-spoke versus Virtual WAN and workload-specific network topologies
 - Private Link, DNS forwarding, Azure Monitor Agent, and Data Collection Rules
 - Subscription vending, policy-as-code, and controlled environment promotion
+
+---
+
+<div align="center">
+
+Part of the [Azure DevOps portfolio](https://github.com/komal324mane) · [Terraform infrastructure](https://github.com/komal324mane/terraform-azure-infrastructure) · [Pipeline lab](https://github.com/komal324mane/azure-devops-terraform-pipeline)
+
+</div>
