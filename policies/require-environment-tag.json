@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "displayName": "Audit resources missing the environment tag",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Learning example: audit indexed resources that do not have an environment tag. This definition is not assigned.",
+    "metadata": {
+      "category": "Tags",
+      "version": "1.0.0"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Use Audit for initial assessment; evaluate Deny only after impact review."
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "tags['environment']",
+        "exists": "false"
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}
